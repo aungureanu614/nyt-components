@@ -12,7 +12,9 @@ class aButton extends HTMLElement {
         shadowRoot.innerHTML = `
 		<!-- styles are scoped to button elememt -->
 		<style>
-
+            button {
+                color:red;
+            }
 		</style>
 		<button></button>
 
@@ -23,4 +25,4 @@ class aButton extends HTMLElement {
 
 }
 
-window.customElements.define('a-button', aButton);
+// window.customElements.define('a-button', aButton);

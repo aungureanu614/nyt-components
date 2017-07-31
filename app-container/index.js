@@ -5,7 +5,7 @@ class AppContainer extends HTMLElement {
 
     connectedCallback() {
         let el = this;
-        el.addEventListener('callAPI', (e) => {
+        el.addEventListener('click', (e) => {
             fetch("https://api.nytimes.com/svc/books/v3/lists.json?api-key=40ea26fc62c9450683c5d6183ac81f89&list=hardcover-fiction")
                 .then((res) => res.json())
                 .then((res) => {
