@@ -3,12 +3,6 @@ class SearchButton extends aButton {
         super();
         let el = this;
         
-        this.addEventListener('click', e => {
-            // Don't toggle the drawer if it's disabled.
-            // el._callAPI()
-           
-            console.log("in search-button")
-        });
     }
 
     connectedCallback(){

@@ -29,7 +29,7 @@ class AppContainer extends HTMLElement {
         let el = this;
         let appChild = el.childNodes[3]
         appChild.setAttribute('titles', titles)
-        // sets attr of titles to the titles received from the api...now need to display the info in display-books component
+        // sets attr called titles to the titles received from the api...now need to display the info in display-books component
         console.log(el.childNodes)
     }
 

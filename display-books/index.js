@@ -6,7 +6,7 @@ class DisplayBooks extends HTMLElement{
 		const shadowRoot = el.attachShadow({mode: 'open'});
 		el.text = el.getAttribute('titles');
 		shadowRoot.innerHTML = `
-		<!-- styles are scoped to search-button elememt -->
+		<!-- styles are scoped to display-books elememt -->
 		<style>
 
 		</style>
