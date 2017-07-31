@@ -23,19 +23,14 @@ class AppContainer extends HTMLElement {
         });
 
 
-
-
-
     }
 
     _update(titles) {
         let el = this;
-        // console.log(el)
-        console.log(titles)
-        // let appChild = el.querySelector('search-input').shadowRoot.querySelector('#results')
-        // appChild.setAttribute('titles', titles)
-        // sets text attr to titles of books...now need to update things in the search - input component so it can display
-        // console.log(appChild)
+        let appChild = el.childNodes[3]
+        appChild.setAttribute('titles', titles)
+        // sets attr of titles to the titles received from the api...now need to display the info in display-books component
+        console.log(el.childNodes)
     }
 
 }
